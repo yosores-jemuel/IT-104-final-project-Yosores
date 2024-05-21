@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap">
+        <link rel="stylesheet" href="styles.css">
+        <title>Website Ni Jemuel-Faq</title>
+    </head>
+    <body background="white">
+        <header>
+            <nav>
+                <div class="nav__content">
+                    <div class="logo"><a href="#">JY</a></div>
+                    <input type="checkbox" id="check" class="checkbox">
+                    <label for="check" class="checkbox"><i class="fa-solid fa-bars"></i></label>
+                    <ul>
+                        <li><a href="index.html"><i class="fa fa-home"></i> Home</a></li>
+                        <li><a href="portfolio.html"><i class="fa fa-briefcase"></i> Portfolio</a></li>
+                        <li><a href="blog.html"><i class="fa fa-pencil"></i> Blog</a></li>
+                        <li><a href="resume.html"><i class="fa fa-file-text-o"></i> Resume</a></li>
+                        <li><a href="services.html"><i class="fa fa-cogs"></i> Services</a></li>
+                        <li><a href="testimonials.html"><i class="fa-solid fa-comments-o"></i> Testimonials</a></li>
+                        <li><a href="faq.html"><i class="fa fa-question-circle"></i> FAQ</a></li>
+                    </ul>
+                    <a href="#" class="action_btn">Get Started</a>
+                </div>
+            </nav>
+        </header>
+        <section>
+            <div class="containers-">
+                <div class="accordion">
+                    <div class="accordion-item" id="question1">
+                        <a class="accondion-link" href="#question1">
+                            What is a web developer?
+                            <!--<i class="icon ion-md-add"></i>
+                            <i class="icon ion-md-remove"></i>-->
+                        </a>
+                        <div class="answer">
+                            <p>A web developer is a professional who specializes in the development of websites and web applications. 
+                                They are responsible for creating and maintaining the functionality, aesthetics, and performance of websites.</p>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item" id="question2">
+                        <a class="accondion-link" href="#question2">
+                            What career opportunities are available for web developers?
+                            <!--/*<i class="icon ion-md-add"></i>
+                            <i class="icon ion-md-remove"></i>-->
+                        </a>
+                        <div class="answer">
+                           <p> Web developers can work in various industries, including tech companies, 
+                            marketing agencies, or as freelancers, creating websites, 
+                            web applications, and e-commerce platforms.</p>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item" id="question3">
+                        <a class="accondion-link" href="#question3">
+                            How can someone become a web developer?
+                            <!--/*<i class="icon ion-md-add"></i>
+                            <i class="icon ion-md-remove"></i>-->
+                        </a>
+                        <div class="answer">
+                            <p>Typically, aspiring web developers pursue relevant education, 
+                                such as a degree in computer science or attend coding bootcamps, 
+                                and then gain experience through internships or personal projects.</p>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item" id="question4">
+                        <a class="accondion-link" href="#question4">
+                            What are the current trends in web development?
+                            <!--/*<i class="icon ion-md-add"></i>
+                            <i class="icon ion-md-remove"></i>-->
+                        </a>
+                        <div class="answer">
+                            <p>Responsive design, progressive web apps, and the use of frameworks like React and Vue.
+                                js are among the prevalent trends shaping modern web development practices.</p>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item" id="question5">
+                        <a class="accondion-link" href="#question5">
+                            What skills are essential for a web developer?
+                            <!--/*<i class="icon ion-md-add"></i>
+                            <i class="icon ion-md-remove"></i>-->
+                        </a>
+                        <div class="answer">
+                            <p>Key skills include proficiency in HTML, CSS, JavaScript, 
+                                and understanding frameworks like React or Angular.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>    
+        <script>
+            const toggleBtn = document.querySelector('.toggle_btn')
+            const toggleBtnIcon = document.querySelector('.toggle_btn i')
+            const dropDownMenu = document.querySelector('.dropdown_menu')
+    
+            toggleBtn.onclick = function () {
+                dropDownMenu.classList.toggle('open')
+                const isOpen = dropDownMenu.classList.contains('open')
+    
+                toggleBtnIcon.classList = isOpen
+                    ? 'fa-solid fa-xmark'
+                    : 'fa-solid fa-bars'
+            }
+        </script>
+        <footer class="footer">
+            <div class="footer__icons">
+                <i class="ri-facebook-box-fill"></i>
+                <i class="ri-instagram-fill"></i>
+                <i class="ri-phone-fill"></i>
+            </div>
+            <div class="footer__contact">
+                <p>You can contact me on social media or by phone.</p>
+            </div>
+        </footer>
+    </body>
+</html>
